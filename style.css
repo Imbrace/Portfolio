@@ -6,11 +6,19 @@ body {
   color: #333;
 }
 
-header {
+.header {
   background: #222;
   color: white;
   padding: 2rem;
   text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -52,3 +60,29 @@ footer {
   background: #eee;
   font-size: 0.9rem;
 }
+
+.project {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.project video {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.project-text h3 {
+  margin-to
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project video {
+    width: 100%;
+  }
+}
+
