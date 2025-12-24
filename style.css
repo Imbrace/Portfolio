@@ -15,7 +15,7 @@ body {
 }
 
 .profile-img {
-  width: 140px;
+  width: 1400px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
@@ -81,9 +81,11 @@ footer {
   .project {
     flex-direction: column;
   }
-
-  .project video {
-    width: 100%;
-  }
 }
+}
+
+.project video {
+    width: 100%;
+}
+
 
