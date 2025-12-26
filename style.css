@@ -21,7 +21,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: clamp(180px, 25vw, 260px); 
+  height: clamp(object-fit, 25vw, object-fit); 
   overflow: hidden;
 }
 
