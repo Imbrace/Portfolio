@@ -21,7 +21,7 @@ body {
     margin: 0;
     padding: 0 30px;
 
-    background:  url("../images/background.png");
+    background:  url("/images/background.png");
     color: #27313d;
 
     font-family:
