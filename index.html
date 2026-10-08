@@ -1,127 +1,328 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaimz Winter | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jaimz Winter</title>
+
+    <link rel="stylesheet" href="./Index.css">
 </head>
-<body>
- <header class="profile-header">
-  <div class="banner">
-    <img src="profile.jpg"" alt="Banner image" class="banner-img" />
-  </div>
 
-  <div class="profile-info">
-    <img src="profile2.jpg" alt="Jaimz Winter" class="profile-img" />
-    <h1>Jaimz Winter</h1>
-    <p>Researcher | Designer | Developer</p>
-    <h2></h2>
-     I am a postgraduate researcher at Coventry University and academic researcher specialising in technology and immersive digital media. I have worked on numerous interdisciplinary research projects ranging from EU Horizion to industry collaborations, contributing to technical development, research design, and the creation of interactive and public-facing digital outputs. This website is a portfolio of some of the larger Unity projects developed for various research outputs.
-  </div>
-</header>
+<body class="preload">
 
-  <main>
-  <section>
-  <h2>Project Artefacts</h2>
+<main>
 
-  <div class="project">
+    <!-- Navigation -->
+    <header class="header-container">
 
-  <h3>Unconventional Convention</h3>
+        <nav class="header-nav-container">
 
-  <div class="project-content">
-    <video controls>
-      <source src="Uncon.mp4" type="video/mp4">
-    </video>
+            <input
+                id="hamburger-menu"
+                type="checkbox"
+                class="header-nav-checkbox"
+            >
 
-    <div class="project-text">
-      <p>
-       This virtual reality experience challenged participants to solve four interconnected puzzles aboard a spaceship rapidly descending into a black hole. I served as the project lead, mentoring students I taught as they designed prototype puzzle concepts for the experience. I then refined and integrated each student’s work into a cohesive and fully realised VR experience.
+            <label for="hamburger-menu" class="header-nav-label">
+                <span class="hamburger">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </span>
+            </label>
 
-The project was showcased at the Unconventional Convention, an event hosted by Coventry University in collaboration with Glued Marketing and Risk Evolves at the university’s Delia Derbyshire building. The experience was presented as a cooperative escape room, inspired by games such as Don’t Drop the Bomb, where a single player in VR navigated the puzzles while other participants, outside the headset, provided guidance using a physical guidebook.
-      </p>
-      <p>Unity & Metaquest | 2024</p>
+            <div class="header-nav-image-container">
+                <img
+                    src="images/profile.jpg"
+                    alt="Profile picture of Jaimz Winter"
+                >
+            </div>
+
+            <div class="header-nav-wrapper">
+                        <a href="./index.html" class="active"> About</a>
+                        <a href="./research.html">Research </a>
+                        <a href="./teaching.html">Teaching</a>
+                        <a href="./Artefacts.html">Artefacts</a>
+                        <a href="./contact.html">Contact</a>
+                    </div>
+
+        </nav>
+
+
+            <!-- Header -->
+                <div class="header-top-container">
+
+                    <div class="header-top-image-container">
+                        <img
+                            src="images/profile.jpg"
+                            alt="Profile Picture of Jaimz Winter"
+                        >
+                    </div>
+
+                    <div class="header-top-content-container">
+
+                        <h1>Jaimz Winter</h1>
+
+                        <div class="header-affiliations-container">
+
+                              <div class="affiliation-block">
+
+                                <strong class="affiliation-title">
+                                    PhD Student
+                                </strong>
+
+                                <p>
+                                    Coventry University<br>
+                                    Doctor of Philosophy<br>
+                                    2022 – Present
+                                </p>
+
+                                <p class="department-link">
+                                    <a
+                                        href="https://scholar.google.com/citations?user=lIaf_-cAAAAJ&hl=en"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Academic Profile
+                                    </a>
+                                </p>
+
+                            </div>
+
+
+                            <div class="affiliation-block">
+
+                                <strong class="affiliation-title">
+                                    Visiting Researcher
+                                </strong>
+
+                                <p>
+                                    Department of Computer Science<br>
+                                    University College London<br>
+                                    2025 – Present
+                                </p>
+
+                              <p class="department-link">
+                                    <a
+                                        href="https://www.ucl.ac.uk/uclic/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Research Affiliation
+                                    </a>
+                                </p>
+
+                            </div>
+
+
+                            <div class="affiliation-block">
+
+                                <strong class="affiliation-title">
+                                   Research and Impact 
+                                </strong>
+
+                                <p>
+                                    Adenydd<br>
+                                    Swansea-based Charity <br>
+                                    2026 – Present
+                                </p>
+
+                                <p class="department-link">
+                                    <a
+                                        href="https://adenydd.org/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Volunteer
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+    <!-- About -->
+    <div class="content-container">
+
+        <section>
+
+            <div class="about-top-container">
+
+                <div class="about-top-text-container">
+<h1 class="title">
+                About Me
+            </h1>
+                    <p>
+                        I am Jaimz Winter, a researcher and PhD candidate at
+                        Coventry University. My academic background is in
+                        Game Technology, and my interests sit at the
+                        intersection of technology, people, and society.
+                    </p>
+
+                    <p>
+                        I am particularly interested in understanding how
+                        people interact with digital technologies and how
+                        those technologies can be designed to better support
+                        people's needs, expectations, privacy, and wellbeing.                     I am a postgraduate researcher at Coventry University
+                    and academic researcher specialising in technology and
+                    immersive digital media. I have worked on numerous
+                    interdisciplinary research projects ranging from EU
+                    Horizon to industry collaborations, contributing to
+                    technical development, research design, and the creation
+                    of interactive and public-facing digital outputs.
+                    This website is a portfolio of some of the larger Unity
+                    projects developed for various research outputs.
+                    </p>
+
+                    <p>
+                        My current interests include
+                        <strong>Human–Computer Interaction, digital privacy,
+                        video games, artificial intelligence, and digital
+                        governance</strong>.
+                        I am especially interested in the ways that emerging
+                        technologies influence people's behaviour and
+                        experiences, and how technology can be designed in
+                        more human-centred ways.
+                    </p>
+
+                    <p>
+                        I am currently completing a part-time, self-funded
+                        PhD at Coventry University. My doctoral research
+                        explores privacy and user-centred design within video
+                        games.
+                    </p>
+
+                    <p>
+                        Alongside my research, I have experience teaching
+                        undergraduate students in areas including digital
+                        media, immersive technologies, and game development.
+                        I enjoy working across disciplines and communicating
+                        ideas about technology to both specialist and
+                        non-specialist audiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interests -->
+        <section>
+
+            <h2 class="title">
+                Areas of Interest
+            </h2>
+
+            <ul class="list">
+
+                <li>
+                    Human–Computer Interaction
+                </li>
+
+                <li>
+                    Digital privacy and data protection
+                </li>
+
+                <li>
+                    Video games and interactive technologies
+                </li>
+
+                <li>
+                    Artificial intelligence and emerging technologies
+                </li>
+
+                <li>
+                    User-centred design
+                </li>
+
+                <li>
+                    Digital governance and technology policy
+                </li>
+
+                <li>
+                    Technology, society, and digital wellbeing
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Academic Profiles -->
+        <section>
+
+            <h2 class="title">
+                Academic Profiles
+            </h2>
+
+            <p>
+                <a
+                    href="https://pureportal.coventry.ac.uk/en/persons/jaimz-stuart-winter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Coventry University Academic Profile
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://orcid.org/0000-0002-9410-5545"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ORCID
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://scholar.google.com/citations?hl=en&user=lIaf_-cAAAAJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Google Scholar
+                </a>
+            </p>
+
+        </section>
+
     </div>
-  </div>
-</div>
 
-  <h3>PGR VR Research Showcase</h3>
 
-  <div class="project-content">
-    <video controls>
-      <source src="VRPHD.mp4" type="video/mp4">
-    </video>
+    <!-- Footer -->
+    <footer class="footer">
 
-    <div class="project-text">
-      <p>
-        This project was created to present my PhD research at an immersive-themed research event at Coventry University. Instead of using a traditional poster or static display, I designed and rendered a virtual reality environment that functioned as a digital exhibition space. The VR experience presented key findings from my research and allowed me to deliver a short virtual presentation within the environment, offering attendees a more engaging and interactive way to explore the work.
-      </p>
-      <p>Unity & Metaquest | 2025</p>
-    </div>
-  </div>
+        <p class="footer-text">
+            © 2026 Jaimz Winter.
+            <a href="./privacy.html">Privacy Policy</a>.
+            <a href="./cookiepolicy.html">Cookie Policy</a>.
+            Last Updated: 2026.
+        </p>
 
- <h3>TrainMate</h3>
+    </footer>
 
-  <div class="project-content">
-    <video controls>
-      <source src="Train.mp4" type="video/mp4">
-    </video>
 
-    <div class="project-text">
-      <p>
-       This project investigates the integration of sensor-driven data within game-based learning systems. As part of the work, I designed and implemented a location-aware gamified application that leverages real-world map data and real-time location tracking to monitor users’ train journeys. Players are able to collect virtual stamps at visited stations, using physical movement as a core interaction mechanic.
-      <p>Unity | 2025</p>
-    </div>
-  </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.remove('preload');
+        });
+    </script>
 
-   <h3>EmotionBots</h3>
+</main>
 
-  <div class="project-content">
-    <video controls>
-      <source src="Finished Emobot.mp4" type="video/mp4">
-    </video>
-
-    <div class="project-text">
-      <p>
-       This project is a prototype turn-based RPG that explores facial recognition as a core gameplay mechanic. Players control robots that draw power from their owners’ emotional expressions, using these emotions to influence combat against opposing robots. I developed a Python-based Flask server that captures the player’s facial input, evaluates emotional expressions using a trained machine-learning model, and outputs confidence scores. These values are then used in-game to determine both the elemental type of each attack and the resulting damage.
-      </p>
-      <p>Unity | 2026</p>
-    </div>
-  </div>
-
- <h3>Gallery of Living History Card Game</h3>
-
-  <div class="project-content">
-    <video controls>
-      <source src="Finish Trumps.mp4" type="video/mp4">
-    </video>
-
-    <div class="project-text">
-      <p>
-       The Gallery of Living History (GoLH) is a non-profit organisation dedicated to exploring themes of history, memory, and culture through research and creative practice. I was tasked to transform their analogue “Top Trumps”-style card game (featuring artwork of historical figures created by children from partner schools) into a digital version. The resulting game was designed for distribution on both PC and Mobile to be used at public events.
-      </p>
-      <p>Unity | 2024</p>
-    </div>
-  </div>
-
-  </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:winterj4@coventry.ac.uk">winterj4@coventry.ac.uk</a> |
-        <a href="https://www.linkedin.com/in/jaimz/">LinkedIn</a> |
-        <a href="https://scholar.google.com/citations?hl=en&user=lIaf_-cAAAAJ">Google Scholar</a>
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© Jaimz Winter (2026)</p>
-  </footer>
 </body>
 </html>
-
-
-

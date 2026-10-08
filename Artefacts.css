@@ -1,0 +1,891 @@
+
+/* =========================================================
+   Jaimz Winter — Artefacts Website
+   Refined Academic Theme
+   ========================================================= */
+
+
+/* =========================================================
+   Global
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0 30px;
+    background: url("../images/background.png");
+    color: #27313d;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+body.preload * {
+    transition: none !important;
+}
+
+
+/* =========================================================
+   Main Container
+   ========================================================= */
+
+main {
+    width: 100%;
+    max-width: 1050px;
+    margin: 45px auto;
+    background: #ffffff;
+    border: 1px solid #e4e8ed;
+    border-radius: 16px;
+    box-shadow:
+        0 10px 30px rgba(15, 32, 50, 0.06),
+        0 2px 8px rgba(15, 32, 50, 0.04);
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+        background: #ffffff;
+    }
+
+    main {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   Profile Header
+   ========================================================= */
+
+.header-top-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    padding: 42px 45px 38px;
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f9fbfd 100%
+        );
+    order: 1;
+}
+
+.header-top-image-container {
+    flex-shrink: 0;
+}
+
+.header-top-image-container > img {
+    width: 155px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: none;
+    box-shadow:
+        0 8px 25px rgba(15, 32, 50, 0.13);
+    display: block;
+}
+
+.header-top-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-content-container > h1 {
+    margin: 0;
+    padding-bottom: 25px;
+    color: #102a43;
+    font-size: 2.25rem;
+    font-weight: 650;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+
+/* =========================================================
+   Artefacts Header Role
+   ========================================================= */
+
+.header-role {
+    margin: 6px 0 18px;
+    color: #3f6d91;
+    font-size: 0.98rem;
+    font-weight: 550;
+    line-height: 1.5;
+}
+
+.header-introduction {
+    max-width: 720px;
+    margin: 0;
+    color: #5c6976;
+    font-size: 0.91rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   Affiliations
+   ========================================================= */
+
+.header-top-content-container
+.header-affiliations-container {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.affiliation-block {
+    padding-left: 18px;
+    border-left: 3px solid #d8e4f1;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+.affiliation-title {
+    display: block;
+    margin: 0 0 8px;
+    color: #123b63;
+    font-size: 0.95rem;
+    font-weight: 650;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+.affiliation-title:hover {
+    color: #1769aa;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+p {
+    margin: 0 0 7px;
+    color: #5c6976;
+    font-size: 0.86rem;
+    line-height: 1.55;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+.department-link {
+    margin-top: 10px;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+.department-link
+a {
+    color: #1769aa;
+    font-size: 0.84rem;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.header-top-content-container
+.header-affiliations-container
+.affiliation-block
+.department-link
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.header-nav-container {
+    order: 2;
+    position: relative;
+    background: #102a43;
+    z-index: 1000;
+}
+
+.header-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 0 25px;
+    background: #102a43;
+}
+
+.header-nav-wrapper > a {
+    position: relative;
+    padding: 15px 22px;
+    color: #eaf1f7 !important;
+    font-size: 0.88rem;
+    font-weight: 550;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        background 180ms ease;
+}
+
+.header-nav-wrapper > a::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 2px;
+    background: #6eb4e8;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 180ms ease;
+}
+
+.header-nav-wrapper > a:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.header-nav-wrapper > a:hover::after,
+.header-nav-wrapper > a.active::after {
+    transform: scaleX(1);
+}
+
+.header-nav-wrapper > a.active {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   Mobile Navigation
+   ========================================================= */
+
+.header-nav-checkbox {
+    display: none;
+}
+
+.header-nav-checkbox + .header-nav-label {
+    display: none;
+}
+
+.header-nav-image-container {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .header-nav-container {
+        width: 100%;
+        min-height: 58px;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px 20px;
+        background: #102a43;
+        box-shadow:
+            0 3px 10px rgba(15, 32, 50, 0.12);
+    }
+
+    .header-nav-checkbox + .header-nav-label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .header-nav-checkbox +
+    .header-nav-label
+    .icon-bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 5px;
+        background: #ffffff;
+        border-radius: 2px;
+        transition:
+            transform 200ms ease,
+            opacity 200ms ease;
+    }
+
+    .header-nav-checkbox:checked
+    + .header-nav-label
+    .top-bar {
+        transform:
+            rotate(45deg)
+            translate(4px, 5px);
+    }
+
+    .header-nav-checkbox:checked
+    + .header-nav-label
+    .middle-bar {
+        opacity: 0;
+    }
+
+    .header-nav-checkbox:checked
+    + .header-nav-label
+    .bottom-bar {
+        transform:
+            rotate(-45deg)
+            translate(4px, -5px);
+    }
+
+    .header-nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 70px 25px 40px;
+        background:
+            linear-gradient(
+                145deg,
+                #102a43,
+                #173f63
+            );
+        opacity: 0;
+        transition:
+            left 250ms ease,
+            opacity 250ms ease;
+    }
+
+    .header-nav-wrapper > a {
+        width: min(320px, 90%);
+        padding: 14px 20px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .header-nav-wrapper > a::after {
+        display: none;
+    }
+
+    .header-nav-checkbox:checked
+    ~ .header-nav-wrapper {
+        left: 0;
+        opacity: 1;
+    }
+
+    .header-nav-image-container {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   Mobile Header
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-top-container {
+        padding: 35px 30px;
+    }
+
+    .header-top-content-container
+    .header-affiliations-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .affiliation-block {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-top-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 30px 22px 35px;
+        border-bottom: 1px solid #e8edf2;
+        order: 2;
+    }
+
+    .header-top-image-container {
+        display: none;
+    }
+
+    .header-top-content-container > h1 {
+        margin-bottom: 5px;
+        font-size: 2rem;
+    }
+
+    .header-role {
+        margin-bottom: 15px;
+    }
+
+    .header-introduction {
+        font-size: 0.9rem;
+    }
+
+    .header-top-content-container
+    .header-affiliations-container {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+}
+
+
+/* =========================================================
+   Content
+   ========================================================= */
+
+.content-container {
+    padding: 48px 55px 55px;
+}
+
+.content-container section {
+    margin-bottom: 52px;
+}
+
+.content-container section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+p {
+    margin: 0 0 1.15rem;
+}
+
+h2.title {
+    position: relative;
+    margin: 0 0 25px;
+    padding-bottom: 12px;
+    color: #102a43;
+    font-size: 1.55rem;
+    font-weight: 650;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+h2.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 42px;
+    height: 3px;
+    background: #3f8fc5;
+    border-radius: 3px;
+}
+
+h3.subtitle {
+    margin: 0 0 10px;
+    color: #183b5b;
+    font-size: 1.08rem;
+    font-weight: 650;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a:link {
+    color: #1769aa;
+}
+
+a:visited {
+    color: #1769aa;
+}
+
+a:hover {
+    color: #0c4f86;
+}
+
+
+/* =========================================================
+   Artefacts Introduction
+   ========================================================= */
+
+.artefacts-section {
+    width: 100%;
+}
+
+.section-introduction {
+    max-width: 820px;
+    margin: -5px 0 45px;
+    color: #596776;
+    font-size: 0.96rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   Artefacts
+   ========================================================= */
+
+.artefact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #e6ebef;
+}
+
+.artefact:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   Artefact Content
+   ========================================================= */
+
+.artefact-content {
+    width: 100%;
+    min-width: 0;
+    padding: 2px 10px 2px 0;
+}
+
+.artefact-content h3 {
+    margin: 8px 0 18px;
+    color: #102a43;
+    font-size: 1.4rem;
+    font-weight: 650;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+.artefact-content p {
+    margin: 0 0 15px;
+    color: #465462;
+    font-size: 0.92rem;
+    line-height: 1.72;
+}
+
+.artefact-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Artefact Media
+   ========================================================= */
+
+.artefact-media {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 30px;
+    overflow: visible;
+}
+
+.artefact-media video {
+    display: block;
+    width: 320px;
+    height: 180px;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #102a43;
+    box-shadow:
+        0 6px 18px rgba(15, 32, 50, 0.10);
+}
+
+
+/* =========================================================
+   Artefact Metadata
+   ========================================================= */
+
+.artefact-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.artefact-meta span {
+    display: inline-block;
+    padding: 4px 9px;
+    color: #45677f;
+    background: #eef4f8;
+    border: 1px solid #dce8ef;
+    border-radius: 5px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================================================
+   Contact
+   ========================================================= */
+
+.contact-section {
+    padding-top: 5px;
+}
+
+.contact-section p {
+    color: #5c6976;
+}
+
+.contact-divider {
+    margin: 0 8px;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    width: 100%;
+    padding: 22px 30px;
+    background: #f7f9fb;
+    border-top: 1px solid #ffffff;
+}
+
+.footer .footer-text {
+    margin: 0;
+    color: #71808f;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.footer .footer-text a {
+    color: #506f89;
+    text-decoration: none;
+}
+
+.footer .footer-text a:hover {
+    color: #1769aa;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   Responsive Artefacts
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .artefact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 55px;
+        padding-bottom: 50px;
+    }
+
+    .artefact-content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .artefact-media {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .artefact-media video {
+        width: 320px;
+        height: 180px;
+        max-width: 100%;
+    }
+
+    .artefact-meta {
+        justify-content: center;
+    }
+
+    .artefact-content h3 {
+        margin-top: 7px;
+    }
+}
+
+
+/* =========================================================
+   Responsive Content
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .content-container {
+        padding: 35px 22px 40px;
+    }
+
+    .content-container section {
+        margin-bottom: 42px;
+    }
+
+    h2.title {
+        font-size: 1.4rem;
+    }
+
+    h3.subtitle {
+        font-size: 1.04rem;
+    }
+
+    .section-introduction {
+        margin-bottom: 35px;
+        font-size: 0.92rem;
+    }
+
+    .artefact {
+        gap: 0;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+
+    .artefact-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .artefact-content p {
+        font-size: 0.9rem;
+    }
+
+    .artefact-media {
+        width: 100%;
+        margin-top: 25px;
+        justify-content: center;
+    }
+
+    .artefact-media video {
+        width: 320px;
+        height: 180px;
+        max-width: 100%;
+    }
+
+    .contact-divider {
+        margin: 0 4px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================================
+   Small Screens
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .header-top-container {
+        padding: 28px 20px 30px;
+    }
+
+    .header-top-content-container > h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-role {
+        font-size: 0.9rem;
+    }
+
+    .header-introduction {
+        font-size: 0.87rem;
+    }
+
+    .content-container {
+        padding: 30px 18px 35px;
+    }
+
+    .section-introduction {
+        font-size: 0.89rem;
+    }
+
+    .artefact-meta {
+        gap: 5px;
+    }
+
+    .artefact-meta span {
+        padding: 4px 7px;
+        font-size: 0.68rem;
+    }
+
+    .artefact-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .artefact-content p {
+        font-size: 0.88rem;
+    }
+
+    .artefact-media {
+        width: 100%;
+        margin-top: 22px;
+        justify-content: center;
+    }
+
+    .artefact-media video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        max-width: 320px;
+    }
+
+    .contact-divider {
+        display: none;
+    }
+
+    .contact-section a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .footer {
+        padding: 18px;
+    }
+}
