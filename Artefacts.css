@@ -680,76 +680,41 @@ a:hover {
     margin: 0 8px;
 }
 
-
 /* =========================================================
    Footer
    ========================================================= */
 
 .footer {
     width: 100%;
+
     padding: 22px 30px;
+
     background: #f7f9fb;
+
     border-top: 1px solid #ffffff;
 }
 
 .footer .footer-text {
     margin: 0;
+
     color: #71808f;
+
     text-align: center;
+
     font-size: 0.8rem;
     line-height: 1.6;
 }
 
 .footer .footer-text a {
     color: #506f89;
+
     text-decoration: none;
 }
 
 .footer .footer-text a:hover {
     color: #1769aa;
+
     text-decoration: underline;
-}
-
-
-/* =========================================================
-   Responsive Artefacts
-   ========================================================= */
-
-@media (max-width: 850px) {
-
-    .artefact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        margin-bottom: 55px;
-        padding-bottom: 50px;
-    }
-
-    .artefact-content {
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .artefact-media {
-        width: 100%;
-        margin-top: 30px;
-        justify-content: center;
-    }
-
-    .artefact-media video {
-        width: 320px;
-        height: 180px;
-        max-width: 100%;
-    }
-
-    .artefact-meta {
-        justify-content: center;
-    }
-
-    .artefact-content h3 {
-        margin-top: 7px;
-    }
 }
 
 
@@ -775,39 +740,20 @@ a:hover {
         font-size: 1.04rem;
     }
 
-    .section-introduction {
-        margin-bottom: 35px;
-        font-size: 0.92rem;
+    .yearly-container {
+        padding: 20px;
+
+        margin-bottom: 24px;
     }
 
-    .artefact {
-        gap: 0;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
+    ul.list {
+        padding-left: 20px;
     }
 
-    .artefact-content h3 {
-        font-size: 1.25rem;
-    }
+    ul.list > li {
+        padding-left: 3px;
 
-    .artefact-content p {
-        font-size: 0.9rem;
-    }
-
-    .artefact-media {
-        width: 100%;
-        margin-top: 25px;
-        justify-content: center;
-    }
-
-    .artefact-media video {
-        width: 320px;
-        height: 180px;
-        max-width: 100%;
-    }
-
-    .contact-divider {
-        margin: 0 4px;
+        margin-bottom: 16px;
     }
 
     .footer {
@@ -830,59 +776,12 @@ a:hover {
         font-size: 1.8rem;
     }
 
-    .header-role {
-        font-size: 0.9rem;
-    }
-
-    .header-introduction {
-        font-size: 0.87rem;
-    }
-
     .content-container {
         padding: 30px 18px 35px;
     }
 
-    .section-introduction {
-        font-size: 0.89rem;
-    }
-
-    .artefact-meta {
-        gap: 5px;
-    }
-
-    .artefact-meta span {
-        padding: 4px 7px;
-        font-size: 0.68rem;
-    }
-
-    .artefact-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .artefact-content p {
-        font-size: 0.88rem;
-    }
-
-    .artefact-media {
-        width: 100%;
-        margin-top: 22px;
-        justify-content: center;
-    }
-
-    .artefact-media video {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-        max-width: 320px;
-    }
-
-    .contact-divider {
-        display: none;
-    }
-
-    .contact-section a {
-        display: inline-block;
-        margin-right: 10px;
+    .yearly-container {
+        padding: 18px;
     }
 
     .footer {

@@ -808,12 +808,11 @@ a.link:hover {
 
     background: #f7f9fb;
 
-    border-top: 1px solid #e3e8ed;
+    border-top: 1px solid #ffffff;
 }
 
 .footer .footer-text {
     margin: 0;
-    padding: 0;
 
     color: #71808f;
 
@@ -846,6 +845,10 @@ a.link:hover {
         padding: 35px 22px 40px;
     }
 
+    .content-container section {
+        margin-bottom: 42px;
+    }
+
     h2.title {
         font-size: 1.4rem;
     }
@@ -854,28 +857,20 @@ a.link:hover {
         font-size: 1.04rem;
     }
 
-    .about-top-container {
-        flex-direction: column;
+    .yearly-container {
+        padding: 20px;
 
-        align-items: stretch;
-
-        gap: 25px;
+        margin-bottom: 24px;
     }
 
-    .about-top-container
-    .about-top-image-container {
-        order: -1;
-
-        padding: 0;
+    ul.list {
+        padding-left: 20px;
     }
 
-    .about-top-container
-    .about-top-image-container
-    a img {
-        width: 100%;
-        max-width: 300px;
+    ul.list > li {
+        padding-left: 3px;
 
-        margin: 0 auto;
+        margin-bottom: 16px;
     }
 
     .footer {
@@ -900,6 +895,10 @@ a.link:hover {
 
     .content-container {
         padding: 30px 18px 35px;
+    }
+
+    .yearly-container {
+        padding: 18px;
     }
 
     .footer {
