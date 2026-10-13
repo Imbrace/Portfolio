@@ -905,3 +905,50 @@ a.link:hover {
         padding: 18px;
     }
 }
+
+
+/* =========================================================
+   Current Study Container
+   ========================================================= */
+
+.current-study-container {
+    margin: 30px 0;
+    padding: 28px 32px;
+
+    background: linear-gradient(
+        135deg,
+        #0c1f2d 0%,
+        #8fc6f1 100%
+    );
+
+    border: 1px solid #7e99af;
+    border-left: 4px solid #3f8fc5;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 14px rgba(15, 32, 50, 0.04);
+}
+
+.current-study-container h2.title {
+    margin-bottom: 20px;
+}
+
+.current-study-container p {
+    margin-bottom: 12px;
+}
+
+.current-study-container p:last-child {
+    margin-bottom: 0;
+}
+
+.current-study-container strong {
+    color: #183b5b;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .current-study-container {
+        margin: 24px 0;
+        padding: 22px 20px;
+    }
+}
